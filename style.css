@@ -1,0 +1,23 @@
+li {
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif; 
+}
+h3{
+    padding-top: 5px;
+}
+#single{
+    font-size: 35;
+    text-align: center;
+}
+html{
+    background-image: linear-gradient(to bottom right, rgb(37, 37, 37),rgba(35, 95, 58, 0.451));
+
+}
+img {
+    border: 10px solid #6e3737;
+    filter: grayscale();
+}
+p {
+    margin: 10px;
+    word-wrap: break-all;
+  }
