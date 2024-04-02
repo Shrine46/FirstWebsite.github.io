@@ -5,8 +5,9 @@ li {
 h3{
     padding-top: 5px;
 }
-#single{
-    font-size: 35;
+#title{
+    font-size: 72px;
+    color: beige;
     text-align: center;
 }
 html{
@@ -19,5 +20,12 @@ img {
 }
 p {
     margin: 10px;
-    word-wrap: break-all;
+    word-break: break-all;
   }
+iframe{
+    border: 0;
+}
+.grey-large{
+    font: large;
+    color: gainsboro;
+}
