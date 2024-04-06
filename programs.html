@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Programs I've Created</title>
         <link = rel = 'stylesheet' href="style.css">
         <style>
-            div{
-                background-image: linear-gradient(rgb(37, 37, 37),rgba(35, 95, 58, 0.451), rgb(37, 37, 37));
+            .program-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
                 border-style: groove;
-                width: 500px;
-                height: 500px;
+                background-image: linear-gradient(to bottom right, rgb(37, 37, 37),rgba(35, 95, 58, 0.451));
             }
-            video{
-                width: 75%;
-                height: 75%;
+            .program {
+                flex: 1;
+                margin: 10px;
+                padding: 20px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                border-style: initial;
+            }
+            .program iframe {
+                width: 100%;
+                height: 300px;
+            }
+            .program-title {
+                font-size: 24px;
+                margin-bottom: 10px;
                 text-align: center;
             }
-            #div1{
-                float: right;
-            }
-            #div2{
-                float: left;
+            .program-description {
+                margin-top: 10px;
+                text-align: center;
             }
         </style>
     </head>
-    <body>
-        <div>
-            <div id="div2">
+<body>
 
-            </div>
-            <div id="div1">
-                <video text-align="" src="wordle-helper.mp4"></video>
-            </div>
-        </div>
-    </body>
+<div class="program-container">
+
+ <div class="program">
+    <h2 class="program-title">Wordle in Python</h2>
+    <iframe src="WordleInPython.mp4"></iframe>
+    <p class="program-description">This is just a simple recreation of the game Worlde in python and it's terminal</p>
+    <a href="https://github.com/Shrine46/Colledge-Board-Project-10th">Github </a>
+    <button>Download Executable</button>
+ </div>
+
+ <div class="program">
+    <h2 class="program-title">Wordle Assistant</h2>
+    <iframe src="wordle-helper.mp4"></iframe>
+    <p class="program-description">This code is able to narrow down and score which word to guess in wordle.</p>
+    <a href="https://github.com/Shrine46/Wordle-Helper">Github </a> 
+    <p></p>
+    <a href="main.exe">Download</a>
+    <button>Download Executable</button>
+ </div>
+</div>
+
+<div class="program-container">
+
+ <div class="program">
+    <h2 class="program-title">Fruit Catch</h2>
+    <iframe src="fruitcatch.mp4"></iframe>
+    <p class="program-description">Program 3 Description</p>
+    <a href="https://github.com/Shrine46/Pygame-Game">Github </a> 
+    <p></p>
+    <a href="main2.exe">Download</a>
+    <button>Download Executable</button>
+ </div>
+
+ <div class="program">
+    <h2 class="program-title">Connect 4</h2>
+    <iframe src="connect4.mp4"></iframe>
+    <p class="program-description">Recreation of game connect 4 using python within the terminal.</p>
+    <a href="https://github.com/Shrine46/Connect-Four">Github </a>
+    <p></p>
+    <a href="main3.exe">Download</a>
+    <button>Download Executable</button>
+ </div>
+</div>
+
+</body>
 </html>
