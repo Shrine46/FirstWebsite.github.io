@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <link = rel = 'stylesheet' href="style.css">
-        <title id="title">My Favorite Music Artists</title>
-    </head>
-    <body>
-        <h1><b>My Favorite Music Artists</b></h1>
-            <h3>1. David Bowie</h3>
-                <img src="https://miro.medium.com/v2/resize:fit:740/1*kD8u0-qL5GXeseuSZFrRVg.jpeg" height="200px" width="200px" alt="Image of David Bowie">
-                <p>
-                    <p class="grey-large">I <b>LOVE <i>David Bowie's</i></b> music, not only is it really nice to listen to it is also very enjoyable to relisten to the same song over and over again. This is due to the fact that his music holds lots of meaning in each word (or no meaning at all), this makes listening to it a fun experience as you feel like you can connect with the artist, not to mention his legacy and what he stood for.</p>
-                    <br>
-                    <a>https://www.davidbowie.com/about</a>
-                </p>
-                
-            <h3><b>2. Elton John</b></h3>
-                <img src="https://m.media-amazon.com/images/M/MV5BMjM3Njk3Nzc4MF5BMl5BanBnXkFtZTgwODMzNjUxMzE@._V1_.jpg" height="200px" width="200px" alt="Image of Elton John">
-                <p>
-                    <p class="grey-large">Now I understand that this, as well as #1 are basic, but the reason why these choices are basic are becuase they are simply the best, Elton John revolutionized his certain genera and gave way to many new aspiering artists while producing some of the best songs</p>
-                </p>
-            <h3><b>3. Frank Sinatra</b></h3>
-                <img src="https://aarp-content.brightspotcdn.com/ba/47/ebbf283b7cff2f45f6d6c712f14e/frank-sinatra-2-herman-leonard-photography-llc.jpg" height="200px" width="200px" alt="Image of Frank Sinatra">
-                <p>
-                    <p class="grey-large">this is a more recent discovery in my music taste, I have been loving most but not all of his songs due to them having really nice <i>vibes</i> honestly there isn't muhc to say other than his music is just beautiful to listen to.</p>
-                </p>
-            <a href="resume.html">My Resume</a>
-            <br>
-            <a href="programs.html">My Programs</a>
-    </body>
+<head>
+    <link = rel = 'stylesheet' href="style.css">
+    <style>
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 30px;
+            height: 250px;
+            background-color:aquamarine;
+            margin: 10px;
+            cursor: pointer;
+            transition: width 0.3s ease-in, height 0.3s ease-in;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hidden:checked + .box {
+            width: 500px;
+            height: 270px;
+        }
+        .hidden {
+            display: none;
+        }
+        .b1 {
+            background-image: url("https://cdn.naturettl.com/wp-content/uploads/2017/02/22014001/top-tips-improve-landscapes-ross-hoddinott-11-900x601.jpg");
+        }
+        .b2 {
+            background-image: url("https://t3.ftcdn.net/jpg/05/75/80/34/360_F_575803464_pqACzSefEtLVNUEsgjkdj77OYopRNmuZ.jpg");
+        }
+        .b3 {
+            background-image: url("https://samuelearp.com/wp-content/uploads/2023/10/IMG_1512-1024x848.jpeg");
+        }
+        .centered{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <h1 class="text">Welcome to my Website!</h1>
+    </div>
+
+    <div>
+        <h1 class="centered">Look at these cool landscapes!</h1>
+    </div>
+    <span>
+        <div class="container">
+            <input type="radio" name="slider" id="radio1" class="hidden" checked>
+            <label for="radio1" class="box b1"></label>
+            <input type="radio" name="slider" id="radio2" class="hidden">
+            <label for="radio2" class="box b2"></label>
+            <input type="radio" name="slider" id="radio3" class="hidden">
+            <label for="radio3" class="box b3"></label>
+        </div>
+    </span>
+
+    <div class="footer">
+        <h1 class="text">
+            |
+            <a href="index.html">Home Page</a>
+            |
+            <a href="resume.html">Resume</a>
+            |
+            <a href="programs.html">Programs</a>
+            |
+            <a href="extracurriculars.html">Extracurriculars</a>
+            |
+            <a href="favorite-things.html">Favorite Things</a>
+            |
+        </h1>
+    </div>
+</body>
 </html>
